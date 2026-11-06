@@ -1,0 +1,35 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+    <Dialog 
+        id="addTaskDialog" 
+        title="Add Task">
+        <VBox>     
+            <Text 
+                id="TextTareaFragment" 
+                text="{i18n>TareaAnadir}"/>           
+            
+            <Input 
+                id="IngresaTarea2" 
+                placeholder="{i18n>IngresaTarea2}"/>
+
+            <HBox alignItems="Center">
+            <Toolbar>
+                <ToolbarSpacer/> 
+                <Button 
+                    id="AgregarFragment" 
+                    text="{i18n>AgregarFragment}" 
+                    press="onAgregarFragment"
+                    type= "Accept"/>
+                <ToolbarSpacer/> 
+                <Button 
+                    id="CancelarFragment" 
+                    text="{i18n>CancelarFragment}" 
+                    press="onCancelarFragment"
+                    type="Reject"/>            
+                <ToolbarSpacer/> 
+            </Toolbar>
+            </HBox>
+    
+        </VBox>    
+
+    </Dialog>
+</core:FragmentDefinition>

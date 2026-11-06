@@ -1,0 +1,23 @@
+{
+  "generationParameters": {
+    "generationDate": "Tue Oct 20 2026 15:02:00 GMT+0000 (Coordinated Universal Time)",
+    "generatorPlatform": "SAP Business Application Studio",
+    "serviceType": "None",
+    "metadataFilename": "",
+    "serviceUrl": "N/A",
+    "appName": "project2",
+    "appTitle": "To Do List",
+    "appDescription": "To-Do List for save tasks.",
+    "appNamespace": "tdlns",
+    "ui5Theme": "sap_fiori_3",
+    "ui5Version": "1.71.85",
+    "enableEslint": true,
+    "enableTypeScript": false,
+    "showMockDataInfo": false,
+    "generatorVersion": "1.33.0",
+    "template": "Basic",
+    "generatorName": "SAP Fiori Application Generator",
+    "entityRelatedConfig": [],
+    "launchText": "To launch the generated application, run the following from the generated application root folder:\n\n```\n    npm start\n```"
+  }
+}

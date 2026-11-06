@@ -1,0 +1,65 @@
+<mvc:View controllerName="tdlns.project2.controller.ToDoList"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <VBox>                                                                                    
+<!--             <Input 
+                id="IngresaTarea" 
+                placeholder="{i18n>IngresaTarea}"/> -->
+            <Button 
+                id="Agregar" 
+                text="{i18n>Agregar}" 
+                press="onOpenDialog"/> 
+ 
+            <HBox alignItems="Center">
+            </HBox>
+
+        	<List 
+                id="List" 
+                headerText="To-Do List" 
+                mode="Delete"
+           		delete=".onDeleteTask"
+        		enableBusyIndicator="true" 
+                items="{Tarea>/Tareas/}" >
+                
+                <CustomListItem id="CustomListItem"> 
+                    <HBox>
+                        <core:Icon 
+                            id="ListIcon" 
+                            size="2rem" 
+                            src="sap-icon://attachment-photo" 
+                            class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom" /> 
+                        <VBox 
+                            class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom" >
+                            <Text 
+                                id="ListLink" 
+                                text="{Tarea>Descripcion}"/>   <!-- target="{ProductPicUrl}" press=".handlePress"/> -->
+                     <!--       <Label 
+                                id="ListLabel" 
+                                text="{Tarea>Activa}"/>   PREPARADO PARA CUANDO SE ASIGNEN TAREAS-->
+        </VBox>
+                    </HBox>
+                </CustomListItem>
+	        </List>
+
+        <!--ANTIGUA LISTA 
+	<List id="List"
+		headerText="{i18n>ToDoHeaderText}" >
+        <InputListItem id="Input1" label="{i18n>Tarea1}" visible="false">
+		    <Button id="Delete1" text="{i18n>BotonBorrar}" type="Reject" icon="sap-icon://delete" press="onBorrar"/>
+		</InputListItem>
+        <InputListItem id="Input2" label="{i18n>Tarea1}"  visible="false">
+		    <Button id="Delete2" text="{i18n>BotonBorrar}" type="Reject" icon="sap-icon://delete" press="onBorrar"/>
+		</InputListItem>
+        <InputListItem id="Input3" label="{i18n>Tarea1}"  visible="false">
+		    <Button id="Delete3" text="{i18n>BotonBorrar}" type="Reject" icon="sap-icon://delete" press="onBorrar"/>
+		</InputListItem>
+	</List> -->
+  
+
+        </VBox>
+        <content />
+
+    </Page>
+</mvc:View>
